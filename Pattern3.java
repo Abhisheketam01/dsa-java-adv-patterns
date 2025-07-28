@@ -17,3 +17,10 @@ public class Pattern3{
         }
     }
 }
+
+// Enter the number of rows: 5
+// * 
+// * *
+// * * *
+// * * * *
+// * * * * *
