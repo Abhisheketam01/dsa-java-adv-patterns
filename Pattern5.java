@@ -1,6 +1,14 @@
+// goal - 
+//✅ Pattern #5: Centered Pyramid Triangle
+//         * 
+//       * * * 
+//     * * * * * 
+//   * * * * * * * 
+// * * * * * * * * * 
+
 import java.util.Scanner;
 
-public class Pattern4 {
+public class Pattern5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -9,22 +17,17 @@ public class Pattern4 {
         sc.close();
 
         for (int i = 1; i <= rows; i++) {
-            // Print spaces first
+            // Print leading spaces
             for (int j = 1; j <= rows - i; j++) {
-                System.out.print("  "); // 2 spaces for alignment
+                System.out.print("  ");
             }
-            // Then print stars
-            for (int j = 1; j <= i; j++) {
+            // Print stars in pyramid
+            for (int j = 1; j <= (2 * i - 1); j++) {
                 System.out.print("* ");
             }
-            System.out.println(); // move to next line
+            System.out.println();
         }
     }
 }
 
-//Enter number of rows: 5
-//         * 
-//       * *
-//     * * *
-//   * * * *
-// * * * * *
+
